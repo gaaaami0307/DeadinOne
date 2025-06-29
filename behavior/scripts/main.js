@@ -216,6 +216,7 @@ server.system.runInterval(ev => {
     "job1",
     "job2",
     "job3",
+    "acesound"
    ]
 
    const op_player = server.world.getAllPlayers()[0];
