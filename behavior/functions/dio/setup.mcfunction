@@ -1,0 +1,19 @@
+/scoreboard players set @a[tag=!setup] health 2
+/scoreboard players set @a[tag=!setup] arrow_damage 2
+/tag @a[tag=!setup] add resist_fall
+/tag @a[tag=!setup] add arrow_damage_2
+/tag @a[tag=!setup] add noname
+/tag @a[tag=!setup] add arrow_remove_on_hit_2
+/scoreboard players set @a[tag=!setup] killCount 0
+/scoreboard players set @a[tag=!setup] deathCount 0
+/scoreboard players set @a[tag=!setup] damageDealt 0
+/scoreboard players set @a[tag=!setup] damageDealtCount 0
+/scoreboard players set @a[tag=!setup] damageTakenCount 0
+/scoreboard players set @a[tag=!setup] damageTaken 0
+/scoreboard players set @a[tag=!setup] killstreak 0
+/tag @a[tag=!setup] remove kill
+/tag @a[tag=!setup] remove kill2
+/tag @a[tag=!setup] remove death
+/tag @a[tag=!setup] remove death2
+#end
+/tag @a[tag=!setup] add setup
