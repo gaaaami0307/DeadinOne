@@ -213,11 +213,11 @@ server.system.runInterval(ev => {
     "reload",
     "reloading",
     "actionbar",
-    "job1",
-    "job2",
-    "job3",
     "acesound"
    ]
+
+   //jobs
+   const job_number=3; 
 
    const op_player = server.world.getAllPlayers()[0];
    for (const entity of entities){
@@ -231,4 +231,9 @@ server.system.runInterval(ev => {
    for (const func of deadinoneFunctions){
     op_player.runCommandAsync("function dio/"+func);
    }
+
+  for (let i = 1; i <= job_number; i++) {
+    op_player.runCommandAsync("execute if entity @a[scores={job=" + i + "},tag=battle] run function dio/job"+i+"/run");
+  }
+
 })
