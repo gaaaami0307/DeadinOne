@@ -1,0 +1,20 @@
+{
+    "format_version": "1.20.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "dio:power_skill"
+        },
+        "components": {
+            "minecraft:can_destroy_in_creative": true,
+            "minecraft:hand_equipped": true,
+            "minecraft:icon":"power_skill",
+            "minecraft:cooldown": {
+                "category": "power_skill",
+                "duration": 2
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:damage": 1,
+            "minecraft:allow_off_hand": true
+        }
+    }
+}

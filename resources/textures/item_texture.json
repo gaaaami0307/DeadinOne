@@ -40,6 +40,9 @@
       "forest_burst_sword" : {
          "textures" : "textures/items/forest_burst_sword"
       },
+      "power_skill" : {
+         "textures" : "textures/items/power_skill"
+      },
       "forest_wand" : {
          "textures" : "textures/items/forest_wand"
       }

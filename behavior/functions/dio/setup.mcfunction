@@ -14,9 +14,12 @@ scoreboard players set @a[tag=!setup] killstreak 0
 scoreboard players set @a[tag=!setup] arrow 5
 scoreboard players set @a[tag=!setup] reload 0
 scoreboard players set @a[tag=!setup] recast 0
+scoreboard players set @a[tag=!setup] ap 0
 tag @a[tag=!setup] remove kill
 tag @a[tag=!setup] remove kill2
 tag @a[tag=!setup] remove death
 tag @a[tag=!setup] remove death2
+tag @a[tag=!setup] remove skill
+tag @a[tag=!setup] remove powerskill
 #end
 tag @a[tag=!setup] add setup

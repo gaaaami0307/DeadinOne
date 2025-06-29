@@ -121,49 +121,30 @@ class Example{
     }
 }
 
-//モードスイッチャー
-class Mode_Switcher{
+//パワースキル
+class Power_Skill{
     cooldown = 1;
     mp=[0];
-    SID = "mode_switcher";
-    ID="rouge:"+this.SID;
+    SID = "power_skill";
+    ID="dio:"+this.SID;
     Name="モードスイッチャー";
     Rank=RankList[2];
     weapon=true;
 
     constructor(brand){
         this.brand=brand;
-        this.lore="";
-        this.lore=this.Rank+"§r Rank 【"+this.Name+"§r】\n"+this.lore_item;
-        if(this.lore_skillname!="") this.lore+="\n\nスキル【"+this.lore_skillname+"§r】(§e"+this.lore_skilluse+"§r)\n使用条件:*"+this.lore_skilllim+"*\n"+this.lore_skillinfo;
-        if(this.lore_skillname2!="") this.lore+="\n\nスキル【"+this.lore_skillname2+"§r】(§e"+this.lore_skilluse2+"§r)\n使用条件:*"+this.lore_skilllim2+"*\n"+this.lore_skillinfo2;
     }
 
     skill(ev){
         const pl = ev.source;
-        //武器所持数制限
-        if(pl.hasTag("limit_has_weapons")==false){
-            //クールダウン
-            if(pl.getItemCooldown(this.SID)==0){
-                //mp制限
-                if(pl.addLevels(0)>=this.mp[0]){
-                    pl.runCommandAsync("execute as @s at @s run function item/"+this.SID);
-                    pl.startItemCooldown(this.SID,this.cooldown*20);
-                    pl.addLevels(-this.mp[0]);
-                }
-                else{
-                    lack_mp_msg(pl,this.SID);
-                }
-            }
-        }else{
-            limit_weapon_msg(pl,this.SID);
-        }
+        pl.runCommandAsync("execute as @s at @s run tag @s add powerskill");
+        pl.startItemCooldown(this.SID,this.cooldown[1]*20);
     }
 }
 
 //----------------------------------------------------Script
 
-const weapons=[new Mode_Switcher()
+const weapons=[new Power_Skill()
 ];
 
 //ここにスクリプトを記述

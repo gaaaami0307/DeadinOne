@@ -10,3 +10,4 @@ scoreboard objectives add recast dummy
 scoreboard objectives add recastT dummy
 scoreboard objectives add job dummy
 scoreboard objectives add acetime dummy
+scoreboard objectives add ap dummy
