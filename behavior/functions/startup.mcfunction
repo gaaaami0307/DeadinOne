@@ -10,3 +10,4 @@ scoreboard objectives add arg2 dummy
 scoreboard objectives add arg3 dummy
 scoreboard objectives add killstreak dummy
 scoreboard objectives add arrow dummy 残弾数
+scoreboard objectives add arrow_trail dummy
