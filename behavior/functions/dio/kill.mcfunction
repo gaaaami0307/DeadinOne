@@ -10,9 +10,9 @@ execute as @a[tag=kill,scores={killstreak=2}] at @s run playsound note.harp @s ~
 execute as @a[tag=kill,scores={killstreak=2}] at @s run playsound note.guitar @s ~ ~ ~ 1 1
 execute as @a[tag=kill,scores={killstreak=2}] at @s run playsound note.bell @s ~ ~ ~ 1 1
 #3
-execute as @a[tag=kill,scores={killstreak=3}] at @s run playsound note.harp @s ~ ~ ~ 1 1.25992104989487
-execute as @a[tag=kill,scores={killstreak=3}] at @s run playsound note.guitar @s ~ ~ ~ 1 1.25992104989487
-execute as @a[tag=kill,scores={killstreak=3}] at @s run playsound note.bell @s ~ ~ ~ 1 1.25992104989487
+execute as @a[tag=kill,scores={killstreak=3}] at @s run playsound note.harp @s ~ ~ ~ 1 1.12246204830937
+execute as @a[tag=kill,scores={killstreak=3}] at @s run playsound note.guitar @s ~ ~ ~ 1 1.12246204830937
+execute as @a[tag=kill,scores={killstreak=3}] at @s run playsound note.bell @s ~ ~ ~ 1 1.12246204830937
 #4
 execute as @a[tag=kill,scores={killstreak=4}] at @s run playsound note.harp @s ~ ~ ~ 1 1.25992104989487
 execute as @a[tag=kill,scores={killstreak=4}] at @s run playsound note.guitar @s ~ ~ ~ 1 1.25992104989487
