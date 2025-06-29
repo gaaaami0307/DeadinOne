@@ -9,3 +9,4 @@ scoreboard objectives add reload dummy
 scoreboard objectives add recast dummy
 scoreboard objectives add recastT dummy
 scoreboard objectives add job dummy
+scoreboard objectives add acetime dummy

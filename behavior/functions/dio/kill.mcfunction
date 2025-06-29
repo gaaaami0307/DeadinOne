@@ -1,11 +1,25 @@
 #キル判定
 tag @a[tag=t:kill] add kill
 scoreboard players add @a[tag=kill] killstreak 1
-execute as @a[tag=kill,scores={killstreak=1}] at @s run playsound random.orb @s ~~~ 2 1
-execute as @a[tag=kill,scores={killstreak=2}] at @s run playsound random.orb @s ~~~ 2 1.15
-execute as @a[tag=kill,scores={killstreak=3}] at @s run playsound random.orb @s ~~~ 2 1.3
-execute as @a[tag=kill,scores={killstreak=4}] at @s run playsound random.orb @s ~~~ 2 1.45
-execute as @a[tag=kill,scores={killstreak=5..}] at @s run playsound random.totem @s ~~~ 2 1
+#1
+execute as @a[tag=kill,scores={killstreak=1}] at @s run playsound note.harp @s ~ ~ ~ 1 0.890898718140339
+execute as @a[tag=kill,scores={killstreak=1}] at @s run playsound note.guitar @s ~ ~ ~ 1 0.890898718140339
+execute as @a[tag=kill,scores={killstreak=1}] at @s run playsound note.bell @s ~ ~ ~ 1 0.890898718140339
+#2
+execute as @a[tag=kill,scores={killstreak=2}] at @s run playsound note.harp @s ~ ~ ~ 1 1
+execute as @a[tag=kill,scores={killstreak=2}] at @s run playsound note.guitar @s ~ ~ ~ 1 1
+execute as @a[tag=kill,scores={killstreak=2}] at @s run playsound note.bell @s ~ ~ ~ 1 1
+#3
+execute as @a[tag=kill,scores={killstreak=3}] at @s run playsound note.harp @s ~ ~ ~ 1 1.25992104989487
+execute as @a[tag=kill,scores={killstreak=3}] at @s run playsound note.guitar @s ~ ~ ~ 1 1.25992104989487
+execute as @a[tag=kill,scores={killstreak=3}] at @s run playsound note.bell @s ~ ~ ~ 1 1.25992104989487
+#4
+execute as @a[tag=kill,scores={killstreak=4}] at @s run playsound note.harp @s ~ ~ ~ 1 1.25992104989487
+execute as @a[tag=kill,scores={killstreak=4}] at @s run playsound note.guitar @s ~ ~ ~ 1 1.25992104989487
+execute as @a[tag=kill,scores={killstreak=4}] at @s run playsound note.bell @s ~ ~ ~ 1 1.25992104989487
+#5
+execute as @a[tag=kill,scores={killstreak=5..}] at @s run scoreboard players set @s acetime 16
+#particle
 execute as @a[tag=kill,scores={killstreak=1..}] at @s positioned ^^^1 run particle minecraft:raid_omen_emitter ~~1~
 execute as @a[tag=kill,scores={killstreak=2..}] at @s positioned ^0.1^^1 run particle minecraft:raid_omen_emitter ~~1~
 execute as @a[tag=kill,scores={killstreak=3..}] at @s positioned ^-0.1^^1 run particle minecraft:raid_omen_emitter ~~1~
