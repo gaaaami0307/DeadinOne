@@ -185,8 +185,8 @@ server.system.runInterval(ev => {
    //---------------------
    //---エンティティ処理----
 
-   const entities=["magicbullet",
-    "spawner",
+   //rouge entities
+   const entities=[
     "bullet_damage_straight",
     "trap_damage_push",
     "beam_damage_recursion",
@@ -195,8 +195,27 @@ server.system.runInterval(ev => {
     "spawner_spread_steady",
    ];
 
+   //dio entities
    const deadinoneEntities=[
 
+   ]
+
+   //dio functiond
+   const deadinoneFunctions=[
+    "setup",
+    "kill",
+    "death",
+    "respawn",
+    "spawn",
+    "arrow_number",
+    "track_arrow",
+    "arrow_trail",
+    "reload",
+    "reloading",
+    "actionbar",
+    "job1",
+    "job2",
+    "job3",
    ]
 
    const op_player = server.world.getAllPlayers()[0];
@@ -206,5 +225,9 @@ server.system.runInterval(ev => {
 
    for (const entity of deadinoneEntities){
     op_player.runCommandAsync("execute as @e[type=dio:"+entity+"] at @s run function dio/"+entity);
+   }
+
+   for (const func of deadinoneFunctions){
+    op_player.runCommandAsync("function dio/"+func);
    }
 })
