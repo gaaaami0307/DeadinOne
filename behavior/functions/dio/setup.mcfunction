@@ -22,5 +22,6 @@ tag @a[tag=!setup] remove death2
 tag @a[tag=!setup] remove skill
 tag @a[tag=!setup] remove powerskill
 tag @a[tag=!setup] remove ultimate
+effect @a[tag=!setup] clear
 #end
 tag @a[tag=!setup] add setup

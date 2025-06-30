@@ -49,7 +49,7 @@ execute as @s as @s[tag=E_j5s_bombed] at @s positioned ~~-100~ run playsound ite
 #起爆時消滅
 execute as @s as @s[tag=E_j5s_bombed] at @s positioned ~~-100~ run scoreboard players set @s death_timer 1000000
 #起爆時ダメージ*最後に持ってくること*
-execute as @s as @s[tag=E_j5s_bombed] at @s positioned ~~-100~ run damage @e[tag=E_j5s_bomb,r=8] 5 entity_attack entity @p[scores={job=5}]
+execute as @s as @s[tag=E_j5s_bombed] at @s positioned ~~-100~ run damage @e[tag=E_j5s_bomb,r=8] 2 magic entity @p[scores={job=5}]
 #起爆時エフェクト
 execute as @s as @s[tag=E_j5s_bombed] at @s positioned ~~-100~ run effect @e[tag=E_j5s_bomb,r=8] slowness 5 4
 #起爆時処理終了
