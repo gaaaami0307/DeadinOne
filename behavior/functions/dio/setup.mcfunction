@@ -29,6 +29,10 @@ tag @a[tag=!setup] remove ultimate
 tag @a[tag=!setup] remove battle
 tag @a[tag=!setup] remove jobselect
 tag @a[tag=!setup] remove ready
+tag @a[tag=!setup] remove kc15
+tag @a[tag=!setup] remove kc20
+tag @a[tag=!setup] remove kc25
+tag @a[tag=!setup] remove kc30
 effect @a[tag=!setup] clear
 clear @a[tag=!setup]
 #end
