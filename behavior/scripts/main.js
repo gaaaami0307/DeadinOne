@@ -211,7 +211,8 @@ server.system.runInterval(ev => {
     "jobselect",
     "gamestarting",
     "gaming",
-    "gameending"
+    "gameending",
+    "itemtp"
    ]
 
    //jobs
