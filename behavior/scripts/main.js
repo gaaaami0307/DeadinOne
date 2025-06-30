@@ -208,7 +208,9 @@ server.system.runInterval(ev => {
     "reload",
     "reloading",
     "actionbar",
-    "acesound"
+    "acesound",
+    "jobselect",
+    "gamestarting"
    ]
 
    //jobs
