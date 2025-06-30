@@ -178,6 +178,7 @@ server.system.runInterval(ev => {
 
    //dio entities
    const deadinoneEntities=[
+    "job5_skill",
 
    ]
 
@@ -198,7 +199,7 @@ server.system.runInterval(ev => {
    ]
 
    //jobs
-   const job_number=4; 
+   const job_number=5; 
 
    const op_player = server.world.getAllPlayers()[0];
    for (const entity of entities){
@@ -206,7 +207,7 @@ server.system.runInterval(ev => {
    }
 
    for (const entity of deadinoneEntities){
-    op_player.runCommandAsync("execute as @e[type=dio:"+entity+"] at @s run function dio/"+entity);
+    op_player.runCommandAsync("execute as @e[type=dio:"+entity+"] at @s run function dio/entity/"+entity);
    }
 
    for (const func of deadinoneFunctions){
