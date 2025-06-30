@@ -21,6 +21,7 @@ scoreboard players set @a[tag=!setup] ap 0
 scoreboard players reset @a[tag=!setup] job
 tag @a[tag=!setup] remove kill
 tag @a[tag=!setup] remove kill2
+tag @a[tag=!setup] remove spawn2
 tag @a[tag=!setup] remove death
 tag @a[tag=!setup] remove death2
 tag @a[tag=!setup] remove skill
