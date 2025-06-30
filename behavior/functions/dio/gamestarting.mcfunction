@@ -16,4 +16,4 @@ execute as @a[scores={countdown=4}] at @s run title @s title §6START!
 execute as @a[scores={countdown=4}] at @s run title @s times 0 70 20
 execute as @a[scores={countdown=4}] at @s run tag @s add battle
 execute as @a[scores={countdown=4}] at @s run tag @s add spawn
-execute as @a[scores={countdown=1}] at @s run playsound mob.enderdragon.growl @s ~~~ 0.5 1 
+execute as @a[scores={countdown=1}] at @s run playsound mob.enderdragon.growl @s ~~~ 0.25 1 

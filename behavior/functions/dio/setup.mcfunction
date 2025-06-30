@@ -4,10 +4,10 @@ tag @a[tag=!setup] add resist_fall
 tag @a[tag=!setup] add arrow_damage_2
 tag @a[tag=!setup] add noname
 tag @a[tag=!setup] add arrow_remove_on_hit_2
-scoreboard players set @a[tag=!setup] killCount 0
 scoreboard objectives remove killCount
 scoreboard objectives add killCount dummy キル数
 scoreboard objectives setdisplay sidebar killCount
+scoreboard players set @a[tag=!setup] killCount 0
 scoreboard players set @a[tag=!setup] deathCount 0
 scoreboard players set @a[tag=!setup] damageDealt 0
 scoreboard players set @a[tag=!setup] damageDealtCount 0

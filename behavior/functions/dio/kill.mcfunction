@@ -1,5 +1,7 @@
 #キル判定
 tag @a[tag=t:kill] add kill
+execute as @a[tag=kill] as @s[tag=t:death] run scoreboard players remove @s killCount 1
+execute as @a[tag=kill] as @s[tag=t:death] run tag @s remove kill
 scoreboard players add @a[tag=kill] killstreak 1
 #1
 execute as @a[tag=kill,scores={killstreak=1}] at @s run playsound note.harp @s ~ ~ ~ 1 0.890898718140339

@@ -197,7 +197,6 @@ server.system.runInterval(ev => {
 
    //dio functiond
    const deadinoneFunctions=[
-    "setup",
     "kill",
     "death",
     "respawn",
