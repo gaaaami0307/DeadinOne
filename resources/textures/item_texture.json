@@ -43,6 +43,9 @@
       "power_skill" : {
          "textures" : "textures/items/power_skill"
       },
+      "ultimate" : {
+         "textures" : "textures/items/ultimate"
+      },
       "forest_wand" : {
          "textures" : "textures/items/forest_wand"
       }

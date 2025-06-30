@@ -123,13 +123,9 @@ class Example{
 
 //パワースキル
 class Power_Skill{
-    cooldown = 1;
-    mp=[0];
+    cooldown = 2;
     SID = "power_skill";
     ID="dio:"+this.SID;
-    Name="モードスイッチャー";
-    Rank=RankList[2];
-    weapon=true;
 
     constructor(brand){
         this.brand=brand;
@@ -138,13 +134,30 @@ class Power_Skill{
     skill(ev){
         const pl = ev.source;
         pl.runCommandAsync("execute as @s at @s run tag @s add powerskill");
-        pl.startItemCooldown(this.SID,this.cooldown[1]*20);
+        pl.startItemCooldown(this.SID,this.cooldown*20);
+    }
+}
+
+//アルティメット
+class Ultimate{
+    cooldown = 2;
+    SID = "ultimate";
+    ID="dio:"+this.SID;
+
+    constructor(brand){
+        this.brand=brand;
+    }
+
+    skill(ev){
+        const pl = ev.source;
+        pl.runCommandAsync("execute as @s at @s run tag @s add ultimate");
+        pl.startItemCooldown(this.SID,this.cooldown*20);
     }
 }
 
 //----------------------------------------------------Script
 
-const weapons=[new Power_Skill()
+const weapons=[new Power_Skill(), new Ultimate()
 ];
 
 //ここにスクリプトを記述
