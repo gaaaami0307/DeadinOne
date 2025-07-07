@@ -28,6 +28,8 @@ execute as @a[tag=kill,scores={killstreak=3..}] at @s positioned ^-0.1^^1 run pa
 execute as @a[tag=kill,scores={killstreak=4..}] at @s positioned ^^0.2^1 run particle minecraft:raid_omen_emitter ~~1~
 execute as @a[tag=kill,scores={killstreak=5..}] at @s positioned ^^^1 run particle minecraft:trial_omen_emitter ~~1~
 execute as @a[tag=kill,scores={killstreak=5..}] at @s positioned ^^^1 run particle minecraft:critical_hit_emitter ~~2~
+#parks
+execute as @a[tag=kill,scores={park=1}] at @s run scoreboard players add @s ap 5
 execute as @a[tag=kill] at @s run tag @s add kill2
 execute as @a[tag=kill] at @s run scoreboard players add @s arrow 3
 execute as @a[tag=kill] at @s run tag @s remove kill

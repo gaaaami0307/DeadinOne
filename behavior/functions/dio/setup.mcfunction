@@ -20,6 +20,7 @@ scoreboard players set @a[tag=!setup] reload 0
 scoreboard players set @a[tag=!setup] recast 0
 scoreboard players set @a[tag=!setup] ap 0
 scoreboard players reset @a[tag=!setup] job
+scoreboard players reset @a[tag=!setup] park
 tag @a[tag=!setup] remove kill
 tag @a[tag=!setup] remove kill2
 tag @a[tag=!setup] remove spawn2
