@@ -12,5 +12,6 @@ scoreboard objectives add job dummy
 scoreboard objectives add park dummy
 scoreboard objectives add acetime dummy
 scoreboard objectives add ap dummy
+scoreboard objectives add parkcountdown dummy
 scoreboard objectives add countdown dummy
 scoreboard objectives add gameending dummy
