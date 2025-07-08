@@ -1,0 +1,1 @@
+execute as @e[type=dio:target] at @s run tp @s ~~~

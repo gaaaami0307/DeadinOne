@@ -209,6 +209,7 @@ server.system.runInterval(ev => {
     "actionbar",
     "acesound",
     "jobselect",
+    "targetlock",
     "parkselecting",
     "gamestarting",
     "gaming",
