@@ -15,3 +15,7 @@ scoreboard objectives add ap dummy
 scoreboard objectives add parkcountdown dummy
 scoreboard objectives add countdown dummy
 scoreboard objectives add gameending dummy
+scoreboard objectives add ac1 dummy
+scoreboard objectives add ac2 dummy
+scoreboard objectives add ac3 dummy
+scoreboard objectives add skilllevel dummy

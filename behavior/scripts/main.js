@@ -208,6 +208,7 @@ server.system.runInterval(ev => {
     "reloading",
     "actionbar",
     "acesound",
+    "count",
     "jobselect",
     "targetlock",
     "parkselecting",
