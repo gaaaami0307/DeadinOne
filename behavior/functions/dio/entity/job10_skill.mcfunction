@@ -50,7 +50,7 @@ execute as @s as @s[tag=E_j10s_bombed] at @s positioned ~~-100~ run scoreboard p
 #起爆時ダメージ*最後に持ってくること*
 execute as @s as @s[tag=E_j10s_bombed] at @s positioned ~~-100~ run damage @e[tag=E_j10s_bomb,r=4] 1 magic entity @p[scores={job=10}]
 execute as @s as @s[tag=E_j10s_bombed] at @s positioned ~~-100~ run camera @a[tag=E_j10s_bomb,r=4] fade time 0.1 2 3 color 255 255 200
-execute as @s as @s[tag=E_j10s_bombed] at @s positioned ~~-100~ run scoreboard players add @a[scores={job=10}] ap 10 
+execute as @s as @s[tag=E_j10s_bombed] at @s positioned ~~-100~ run scoreboard players add @a[scores={job=10}] ap 15
 #起爆時処理終了
 execute as @s as @s[tag=E_j10s_bombed] at @s positioned ~~-100~ run tag @e[tag=E_j10s_bomb,r=8] remove E_j10s_bomb
 execute as @s as @s[tag=E_j10s_bombed] at @s positioned ~~-100~ run tag @s remove E_j10s_bombed
