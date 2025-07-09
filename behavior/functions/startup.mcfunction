@@ -6,6 +6,7 @@ scoreboard objectives add killstreak dummy
 scoreboard objectives add arrow dummy 残弾数
 scoreboard objectives add arrow_trail dummy
 scoreboard objectives add reload dummy
+scoreboard objectives add reloadT dummy
 scoreboard objectives add recast dummy
 scoreboard objectives add recastT dummy
 scoreboard objectives add job dummy
