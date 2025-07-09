@@ -215,11 +215,12 @@ server.system.runInterval(ev => {
     "gamestarting",
     "gaming",
     "gameending",
-    "itemtp"
+    "itemtp",
+    "effects"
    ]
 
    //jobs
-   const job_number=8; 
+   const job_number=9; 
 
    const op_player = server.world.getAllPlayers()[0];
    for (const entity of entities){
