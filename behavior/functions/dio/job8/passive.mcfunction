@@ -1,0 +1,1 @@
+execute as @a[scores={job=8},tag=spawn2] at @s run tag @s remove spawn2

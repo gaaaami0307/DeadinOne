@@ -219,7 +219,7 @@ server.system.runInterval(ev => {
    ]
 
    //jobs
-   const job_number=7; 
+   const job_number=8; 
 
    const op_player = server.world.getAllPlayers()[0];
    for (const entity of entities){
