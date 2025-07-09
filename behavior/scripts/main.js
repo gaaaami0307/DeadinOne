@@ -192,6 +192,7 @@ server.system.runInterval(ev => {
    //dio entities
    const deadinoneEntities=[
     "job5_skill",
+    "job10_skill",
 
    ]
 
@@ -220,7 +221,7 @@ server.system.runInterval(ev => {
    ]
 
    //jobs
-   const job_number=9; 
+   const job_number=10; 
 
    const op_player = server.world.getAllPlayers()[0];
    for (const entity of entities){
