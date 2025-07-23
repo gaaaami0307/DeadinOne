@@ -14,3 +14,6 @@ item.rouge:soul_blaster=ソウルブラスター
 item.rouge:forest_burst_sword=樹滅の剣
 entity.rouge:zombie.name=ゾンビ
 item.spawn_egg.entity.rouge:zombie.name=Spawn ゾンビ
+item.dio:power_skill=パワースキル
+item.dio:ultimate=アルティメット
+item.dio:assault_rifle=アサルトライフル

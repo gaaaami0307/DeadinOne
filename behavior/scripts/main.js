@@ -220,7 +220,6 @@ server.system.runInterval(ev => {
     "respawn",
     "spawn",
     "arrow_number",
-    "track_arrow",
     "arrow_trail",
     "reload",
     "reloading",
