@@ -1,0 +1,21 @@
+{
+    "format_version": "1.20.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "dio:assault_rifle"
+        },
+        "components": {
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:hand_equipped": true,
+            "minecraft:icon":"assault_rifle",
+            "minecraft:cooldown": {
+                "category": "assault_rifle",
+                "duration": 0.75
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:damage": 1,
+            "minecraft:allow_off_hand": false,
+            "minecraft:client_entity": "example:assault_rifle"
+        }
+    }
+}

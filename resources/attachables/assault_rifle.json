@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "dio:assault_rifle",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/items/assault_rifle"
+      },
+      "geometry": {
+        "default": "geometry.assault_rifle"
+      },
+      "render_controllers": ["controller.render.assault_rifle"]
+    },
+    "scripts": {
+      "scale": 1.0
+    },
+    "attach": {
+      "right": {
+        "position": [0.1, 0.2, 0.0],
+        "rotation": [0.0, 90.0, 0.0]
+      }
+    }
+  }
+}

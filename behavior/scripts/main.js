@@ -155,9 +155,26 @@ class Ultimate{
     }
 }
 
+//アサルトライフル
+class AssaultRifle{
+    cooldown = 15;
+    SID = "assault_rifle";
+    ID="dio:"+this.SID;
+
+    constructor(brand){
+        this.brand=brand;
+    }
+
+    skill(ev){
+        const pl = ev.source;
+        pl.runCommandAsync("execute as @s at @s run tag @s add assault_shot");
+        pl.startItemCooldown(this.SID,this.cooldown);
+    }
+}
+
 //----------------------------------------------------Script
 
-const weapons=[new Power_Skill(), new Ultimate()
+const weapons=[new Power_Skill(), new Ultimate(), new AssaultRifle()
 ];
 
 //ここにスクリプトを記述
@@ -193,7 +210,7 @@ server.system.runInterval(ev => {
    const deadinoneEntities=[
     "job5_skill",
     "job10_skill",
-
+    "assault_rifle",
    ]
 
    //dio functiond

@@ -13,6 +13,9 @@
       "explosion_wand" : {
          "textures" : "textures/items/explosion_wand"
       },
+      "assault_rifle" : {
+         "textures" : "textures/items/assault_rifle"
+      },
       "weapon_checker" : {
          "textures" : "textures/items/weapon_checker"
       },
