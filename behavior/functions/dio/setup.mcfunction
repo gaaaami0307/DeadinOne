@@ -43,5 +43,6 @@ effect @a[tag=!setup] clear
 clear @a[tag=!setup]
 kill @e[type=!player]
 replaceitem entity @a[tag=!setup] slot.hotbar 8 barrier 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+scoreboard players random @a UUID 1 99999999
 #end
 tag @a[tag=!setup] add setup
