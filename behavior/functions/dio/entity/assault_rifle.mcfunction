@@ -11,6 +11,7 @@ execute as @s[scores={death_timer=1}] at @s positioned ~~~ run tag @e[c=1,family
 execute as @s[scores={death_timer=1}] at @s positioned ~~~ run execute as @e[tag=E_assr_settinger,c=1] at @s positioned ^^^-30 run tp @e[tag=E_assr,c=1] ~~~ facing @e[tag=E_assr_settinger,c=1]
 #set ID
 execute as @s[scores={death_timer=1}] at @s positioned ~~~ run scoreboard players operation @s UUID = @e[tag=E_assr_settinger,c=1] UUID
+execute as @s[scores={death_timer=1}] at @s positioned ~~~ run scoreboard players operation @s job = @e[tag=E_assr_settinger,c=1] job
 #発射位置
 execute as @s[scores={death_timer=1}] at @s positioned ~~~ run tp ^^^30.5
 execute as @s[scores={death_timer=1}] at @s positioned ~~~ run tag @e[tag=E_assr_settinger,c=1] remove E_assr_settinger
@@ -43,4 +44,4 @@ execute as @s at @s positioned ~~-100~ as @e[tag=E_assr_hitter] run tag @s remov
 #回数制限消滅
 execute as @s[scores={death_timer=200..}] at @s run kill @s
 #再帰
-execute as @e[tag=E_assr,c=1,scores={death_timer=..199}] at @s run function entity/beam_damage_recursion
+execute as @e[tag=E_assr,c=1,scores={death_timer=..199}] at @s run function dio/entity/assault_rifle

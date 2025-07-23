@@ -6,7 +6,7 @@
         },
         "components": {
             "minecraft:can_destroy_in_creative": false,
-            "minecraft:hand_equipped": true,
+            "minecraft:hand_equipped": false,
             "minecraft:icon":"assault_rifle",
             "minecraft:cooldown": {
                 "category": "assault_rifle",
@@ -15,7 +15,7 @@
             "minecraft:max_stack_size": 1,
             "minecraft:damage": 1,
             "minecraft:allow_off_hand": false,
-            "minecraft:client_entity": "example:assault_rifle"
+            "minecraft:client_entity": "dio:assault_rifle"
         }
     }
 }

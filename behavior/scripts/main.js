@@ -234,7 +234,8 @@ server.system.runInterval(ev => {
     "gaming",
     "gameending",
     "itemtp",
-    "effects"
+    "effects",
+    "assault_shot"
    ]
 
    //jobs

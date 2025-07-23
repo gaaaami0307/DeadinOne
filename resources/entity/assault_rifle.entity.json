@@ -12,6 +12,9 @@
       "geometry": {
         "default": "geometry.assault_rifle"
       },
+      "animation_controllers": [
+        "controller.animation.assault_rifle.hold"
+      ],
       "render_controllers": ["controller.render.assault_rifle"],
       "spawn_egg": false
     }

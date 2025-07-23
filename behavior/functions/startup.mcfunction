@@ -22,3 +22,4 @@ scoreboard objectives add ac3 dummy
 scoreboard objectives add skilllevel dummy
 scoreboard objectives add e_marking dummy
 scoreboard objectives add e_marking2 dummy
+scoreboard objectives add UUID dummy
