@@ -41,6 +41,7 @@ execute as @s at @s positioned ~~-100~ if entity @e[tag=E_assr_hitter] run score
 execute as @s at @s positioned ~~~ as @e[tag=!E_assr,family=!inanimate,type=!item] if score @s UUID = @e[tag=E_assr,c=1] UUID run damage @e[tag=E_assr_hitter,c=1] 2 entity_attack entity @s
 #ヒット処理終了
 execute as @s at @s positioned ~~-100~ as @a[tag=E_assr_hitter] run tag @s remove E_assr_hitter
+execute as @s at @s positioned ~~-100~ as @e[tag=E_assr_hitter] run tag @s remove E_assr_hitter
 #回数制限消滅
 execute as @s[scores={death_timer=200..}] at @s run kill @s
 #再帰
