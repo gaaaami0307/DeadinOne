@@ -43,6 +43,6 @@ execute as @s at @s positioned ~~~ as @e[tag=!E_assr,family=!inanimate,type=!ite
 execute as @s at @s positioned ~~-100~ as @a[tag=E_assr_hitter] run tag @s remove E_assr_hitter
 execute as @s at @s positioned ~~-100~ as @e[tag=E_assr_hitter] run tag @s remove E_assr_hitter
 #回数制限消滅
-execute as @s[scores={death_timer=200..}] at @s run kill @s
+execute as @s[scores={death_timer=101..}] at @s run kill @s
 #再帰
-execute as @e[tag=E_assr,c=1,scores={death_timer=..199}] at @s run function dio/entity/assault_rifle
+execute as @e[tag=E_assr,c=1,scores={death_timer=..100}] at @s run function dio/entity/assault_rifle

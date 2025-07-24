@@ -45,6 +45,6 @@ execute as @s at @s positioned ~~~ as @e[tag=!E_handgun,family=!inanimate,type=!
 execute as @s at @s positioned ~~-100~ as @a[tag=E_handgun_hitter] run tag @s remove E_handgun_hitter
 execute as @s at @s positioned ~~-100~ as @e[tag=E_handgun_hitter] run tag @s remove E_handgun_hitter
 #回数制限消滅
-execute as @s[scores={death_timer=151..}] at @s run kill @s
+execute as @s[scores={death_timer=61..}] at @s run kill @s
 #再帰
-execute as @e[tag=E_handgun,c=1,scores={death_timer=..150}] at @s run function dio/entity/hand_gun
+execute as @e[tag=E_handgun,c=1,scores={death_timer=..60}] at @s run function dio/entity/hand_gun
