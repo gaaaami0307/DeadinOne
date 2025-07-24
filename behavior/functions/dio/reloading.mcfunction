@@ -14,7 +14,7 @@ execute as @a[scores={reload=1}] at @s run playsound open.wooden_trapdoor @a ~~~
 execute as @a[scores={reload=1}] at @s run playsound open.wooden_trapdoor @a ~~~ 1 1
 execute as @a[scores={reload=1}] at @s positioned ^^^1 run particle minecraft:basic_crit_particle ~~2~
 execute as @a[scores={reload=1}] as @s[scores={park=10}] at @s as @a[r=15,rm=0.1] at @s run playsound random.glass @a ~~~ 1 1.5
-execute as @a[scores={reload=1}] as @s[scores={park=10}] at @s run camera @a[r=15,rm=0.1] fade time 0.1 0.1 2 color 255 255 255
+execute as @a[scores={reload=1}] as @s[scores={park=10}] at @s run camera @a[r=15,rm=0.1] fade time 0.1 1 2 color 255 255 255
 scoreboard players set @a[scores={reload=1}] arrow 5
 scoreboard players set @a[scores={reload=1}] reloadT 0
 execute as @a[scores={reload=1}] at @s run scoreboard players add @s[scores={park=6}] arrow 2
