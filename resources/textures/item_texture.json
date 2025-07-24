@@ -16,6 +16,9 @@
       "assault_rifle" : {
          "textures" : "textures/items/assault_rifle"
       },
+      "minigun" : {
+         "textures" : "textures/items/minigun"
+      },
       "weapon_checker" : {
          "textures" : "textures/items/weapon_checker"
       },

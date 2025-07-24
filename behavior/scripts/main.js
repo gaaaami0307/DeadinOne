@@ -172,9 +172,26 @@ class AssaultRifle{
     }
 }
 
+//ミニガン
+class Minigun{
+    cooldown = 4;
+    SID = "minigun";
+    ID="dio:"+this.SID;
+
+    constructor(brand){
+        this.brand=brand;
+    }
+
+    skill(ev){
+        const pl = ev.source;
+        pl.runCommandAsync("execute as @s at @s run tag @s add minigun_shot");
+        pl.startItemCooldown(this.SID,this.cooldown);
+    }
+}
+
 //----------------------------------------------------Script
 
-const weapons=[new Power_Skill(), new Ultimate(), new AssaultRifle()
+const weapons=[new Power_Skill(), new Ultimate(), new AssaultRifle(), new Minigun()
 ];
 
 //ここにスクリプトを記述
@@ -211,6 +228,7 @@ server.system.runInterval(ev => {
     "job5_skill",
     "job10_skill",
     "assault_rifle",
+    "minigun",
    ]
 
    //dio functiond
@@ -234,7 +252,7 @@ server.system.runInterval(ev => {
     "gameending",
     "itemtp",
     "effects",
-    "assault_shot"
+    "shot"
    ]
 
    //jobs
