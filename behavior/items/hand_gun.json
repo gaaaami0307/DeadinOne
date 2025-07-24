@@ -1,0 +1,20 @@
+{
+    "format_version": "1.20.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "dio:hand_gun"
+        },
+        "components": {
+            "minecraft:can_destroy_in_creative": false,
+            "minecraft:hand_equipped": false,
+            "minecraft:icon":"hand_gun",
+            "minecraft:cooldown": {
+                "category": "hand_gun",
+                "duration": 1.5
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:damage": 0,
+            "minecraft:allow_off_hand": false
+        }
+    }
+}

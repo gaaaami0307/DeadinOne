@@ -19,6 +19,9 @@
       "minigun" : {
          "textures" : "textures/items/minigun"
       },
+      "hand_gun" : {
+         "textures" : "textures/items/hand_gun"
+      },
       "weapon_checker" : {
          "textures" : "textures/items/weapon_checker"
       },
