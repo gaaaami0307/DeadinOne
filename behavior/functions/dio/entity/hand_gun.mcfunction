@@ -18,17 +18,19 @@ execute as @s[scores={death_timer=1}] at @s positioned ~~~ run tag @e[tag=E_hand
 #高さ調整
 execute as @s[scores={death_timer=1}] at @s positioned ~~~ run tp @s ~~101.5~
 #発射時効果音 audio/pitch
-execute as @s[scores={death_timer=1}] at @s positioned ~~-100~ run playsound mob.breeze.jump @a ~~~ 1.5 0.8
+execute as @s[scores={death_timer=1}] at @s positioned ~~-100~ run playsound firework.large_blast @a ~~~ 1.5 0.8
 #発射時パーティクル
-execute as @s[scores={death_timer=1}] at @s positioned ~~-100~ run particle minecraft:wind_charged_emitter ~~~
+execute as @s[scores={death_timer=1}] at @s positioned ~~-100~ run particle minecraft:lava_particle ~~-0.3~
 #
 # 動作
 #
 #移動
 execute as @s at @s positioned ~~~ run tp @s ^^^0.5 true
-execute as @s at @s positioned ~~-100~ unless block ~~~ air run kill @s
+execute as @s at @s positioned ~~-100~ unless block ~~~ air unless block ~~~ glass unless block ~~~ wooden_door unless block ~~~ ladder unless block ~~~ birch_trapdoor run kill @s
+execute as @s at @s positioned ~~-100~ if block ~~~ glass run playsound random.glass @a ~~~ 1 1
+execute as @s at @s positioned ~~-100~ if block ~~~ glass run particle minecraft:weaving_emitter ~~~
 #パーティクル
-execute as @s at @s positioned ~~-100~ run particle minecraft:balloon_gas_particle ~~~
+execute as @s at @s positioned ~~-100~ run particle minecraft:sparkler_emitter ~~~
 #当たり判定--E_handgun_hitter
 execute as @s at @s positioned ~~-100~ as @e[family=!inanimate,type=!item,x=~-0.3,y=~-0.3,z=~-0.3,dx=0,dy=0,dz=0] if entity @s[x=~-0.7,y=~-0.7,z=~-0.7,dx=0,dy=0,dz=0] positioned ~~100~ unless score @e[tag=E_handgun,c=1] UUID = @s UUID run tag @s add E_handgun_hitter
 #ヒット時効果音 audio/pitch

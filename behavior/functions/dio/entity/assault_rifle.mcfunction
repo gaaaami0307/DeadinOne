@@ -26,7 +26,7 @@ execute as @s[scores={death_timer=1}] at @s positioned ~~-100~ run particle mine
 #
 #移動
 execute as @s at @s positioned ~~~ run tp @s ^^^0.5 true
-execute as @s at @s positioned ~~-100~ unless block ~~~ air run kill @s
+execute as @s at @s positioned ~~-100~ unless block ~~~ air unless block ~~~ wooden_door unless block ~~~ ladder unless block ~~~ birch_trapdoor run kill @s
 #パーティクル
 execute as @s at @s positioned ~~-100~ run particle minecraft:balloon_gas_particle ~~~
 #当たり判定--E_assr_hitter
