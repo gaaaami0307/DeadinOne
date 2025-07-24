@@ -30,7 +30,7 @@ execute as @a[tag=kill,scores={killstreak=5..}] at @s positioned ^^^1 run partic
 execute as @a[tag=kill,scores={killstreak=5..}] at @s positioned ^^^1 run particle minecraft:critical_hit_emitter ~~2~
 #parks
 execute as @a[tag=kill,scores={park=1}] at @s run scoreboard players add @s ap 5
-execute as @a[tag=kill,scores={park=4}] at @s if block ~~-0.9~ air run scoreboard players add @s ap 10
+execute as @a[tag=kill,scores={park=4}] at @s if block ~~-0.9~ air run effect @s invisibility 3 1 true
 execute as @a[tag=kill,scores={park=4}] at @s if block ~~-0.9~ air run scoreboard players set @s recast 0
 execute as @a[tag=kill,scores={park=7}] at @s run scoreboard players remove @s recast 10
 execute as @a[tag=kill] at @s run tag @s add kill2
