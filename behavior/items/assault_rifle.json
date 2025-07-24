@@ -10,7 +10,7 @@
             "minecraft:icon":"assault_rifle",
             "minecraft:cooldown": {
                 "category": "assault_rifle",
-                "duration": 0.75
+                "duration": 0.5
             },
             "minecraft:max_stack_size": 1,
             "minecraft:damage": 0,

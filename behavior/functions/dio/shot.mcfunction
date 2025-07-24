@@ -1,3 +1,4 @@
+scoreboard players remove @a[scores={weaponcooldown=1..}] weaponcooldown 1
 #アサルトライフル
 execute as @a[tag=assault_shot,scores={arrow=..0}] at @s run playsound random.click @a ~~~ 1 0.6
 execute as @a[tag=assault_shot,scores={arrow=..0}] at @s positioned ^^^0.5 run particle minecraft:dust_plume ~~1.5~

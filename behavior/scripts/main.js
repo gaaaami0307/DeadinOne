@@ -157,7 +157,7 @@ class Ultimate{
 
 //アサルトライフル
 class AssaultRifle{
-    cooldown = 15;
+    cooldown = 10;
     SID = "assault_rifle";
     ID="dio:"+this.SID;
 
@@ -167,8 +167,16 @@ class AssaultRifle{
 
     skill(ev){
         const pl = ev.source;
-        pl.runCommandAsync("execute as @s at @s run tag @s add assault_shot");
-        pl.startItemCooldown(this.SID,this.cooldown);
+
+        pl.runCommandAsync("scoreboard players test @s weaponcooldown 1 *")
+        .then(result =>{
+          if(result.successCount == 0){
+            pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run tag @s add assault_shot");
+            pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run scoreboard players set @s weaponcooldown " + this.cooldown);
+            pl.startItemCooldown(this.SID,this.cooldown);
+          }
+        })
+        .catch(() =>{})
     }
 }
 
@@ -184,14 +192,22 @@ class Minigun{
 
     skill(ev){
         const pl = ev.source;
-        pl.runCommandAsync("execute as @s at @s run tag @s add minigun_shot");
-        pl.startItemCooldown(this.SID,this.cooldown);
+
+        pl.runCommandAsync("scoreboard players test @s weaponcooldown 1 *")
+        .then(result =>{
+          if(result.successCount == 0){
+            pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run tag @s add minigun_shot");
+            pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run scoreboard players set @s weaponcooldown " + this.cooldown);
+            pl.startItemCooldown(this.SID,this.cooldown);
+          }
+        })
+        .catch(() =>{})
     }
 }
 
 //ハンドガン
 class Handgun{
-    cooldown = 30;
+    cooldown = 20;
     SID = "hand_gun";
     ID="dio:"+this.SID;
 
@@ -201,8 +217,16 @@ class Handgun{
 
     skill(ev){
         const pl = ev.source;
-        pl.runCommandAsync("execute as @s at @s run tag @s add handgun_shot");
-        pl.startItemCooldown(this.SID,this.cooldown);
+
+        pl.runCommandAsync("scoreboard players test @s weaponcooldown 1 *")
+        .then(result =>{
+          if(result.successCount == 0){
+            pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run tag @s add handgun_shot");
+            pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run scoreboard players set @s weaponcooldown " + this.cooldown);
+            pl.startItemCooldown(this.SID,this.cooldown);
+          }
+        })
+        .catch(() =>{})
     }
 }
 

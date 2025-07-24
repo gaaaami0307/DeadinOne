@@ -10,7 +10,7 @@
             "minecraft:icon":"hand_gun",
             "minecraft:cooldown": {
                 "category": "hand_gun",
-                "duration": 1.5
+                "duration": 1
             },
             "minecraft:max_stack_size": 1,
             "minecraft:damage": 0,

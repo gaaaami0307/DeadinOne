@@ -24,6 +24,7 @@ scoreboard players set @a[tag=!setup] ap 0
 scoreboard players reset @a[tag=!setup] job
 scoreboard players set @a[tag=!setup] skilllevel 0
 scoreboard players set @a[tag=!setup] park 0
+scoreboard players set @a[tag=!setup] weaponcooldown 0
 tag @a[tag=!setup] remove kill
 tag @a[tag=!setup] remove kill2
 tag @a[tag=!setup] remove spawn2
