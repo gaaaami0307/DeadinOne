@@ -34,9 +34,9 @@ execute as @s at @s positioned ~~-100~ run particle minecraft:sparkler_emitter ~
 #当たり判定--E_handgun_hitter
 execute as @s at @s positioned ~~-100~ as @e[family=!inanimate,type=!item,x=~-0.3,y=~-0.3,z=~-0.3,dx=0,dy=0,dz=0] if entity @s[x=~-0.7,y=~-0.7,z=~-0.7,dx=0,dy=0,dz=0] positioned ~~100~ unless score @e[tag=E_handgun,c=1] UUID = @s UUID run tag @s add E_handgun_hitter
 #ヒット時効果音 audio/pitch
-execute as @s at @s positioned ~~-100~ as @e[tag=E_handgun_hitter] at @s run playsound mob.breeze.shoot @a ~~~ 1.0 2.0
+execute as @s at @s positioned ~~-100~ as @e[tag=E_handgun_hitter] at @s run playsound mace.smash_air @a ~~~ 1.0 1.3
 #ヒット時パーティクル
-execute as @s at @s positioned ~~-100~ as @e[tag=E_handgun_hitter] at @s run particle minecraft:critical_hit_emitter ~~1~
+execute as @s at @s positioned ~~-100~ as @e[tag=E_handgun_hitter] at @s run particle minecraft:totem_particle ~~1~
 #ヒット時消滅
 execute as @s at @s positioned ~~-100~ if entity @e[tag=E_handgun_hitter] run scoreboard players set @s death_timer 1000000
 #ヒット時ダメージ*最後に持ってくること*
