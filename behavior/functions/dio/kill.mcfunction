@@ -35,4 +35,5 @@ execute as @a[tag=kill,scores={park=4}] at @s if block ~~-0.9~ air run scoreboar
 execute as @a[tag=kill,scores={park=7}] at @s run scoreboard players remove @s recast 10
 execute as @a[tag=kill] at @s run tag @s add kill2
 execute as @a[tag=kill] at @s run scoreboard players add @s arrow 3
+execute as @a[tag=kill] at @s run tag @s remove minigun_shot
 execute as @a[tag=kill] at @s run tag @s remove kill
