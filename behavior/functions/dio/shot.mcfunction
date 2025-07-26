@@ -32,3 +32,12 @@ execute as @a[tag=handgun_shot,scores={park=5}] as @s[scores={reload=..0}] as @s
 execute as @a[tag=handgun_shot,scores={arrow=1..},tag=battle] at @s run summon dio:hand_gun ~~~
 execute as @a[tag=handgun_shot,scores={arrow=1..},tag=battle] at @s run scoreboard players remove @s arrow 1
 execute as @a[tag=handgun_shot] at @s run tag @s remove handgun_shot 
+#スナイパーライフル
+execute as @a[tag=sniper_shot,scores={arrow=..0}] at @s run playsound random.click @a ~~~ 1 0.6
+execute as @a[tag=sniper_shot,scores={arrow=..0}] at @s positioned ^^^0.5 run particle minecraft:dust_plume ~~1.5~
+execute as @a[tag=sniper_shot,scores={arrow=..0}] at @s positioned ^^^0.5 run tag @s[scores={reload=..0}] add wantreload
+execute as @a[tag=sniper_shot,scores={park=5}] as @s[scores={reload=..0}] as @s[scores={count_stop=40..}] as @s[scores={park_cooldown=..0}] run tag @s add wantreload
+execute as @a[tag=sniper_shot,scores={park=5}] as @s[scores={reload=..0}] as @s[scores={count_stop=40..}] as @s[scores={park_cooldown=..0}] run tag @s remove sniper_shot
+execute as @a[tag=sniper_shot,scores={arrow=1..},tag=battle] at @s run summon dio:sniper_rifle ~~~
+execute as @a[tag=sniper_shot,scores={arrow=1..},tag=battle] at @s run scoreboard players remove @s arrow 1
+execute as @a[tag=sniper_shot] at @s run tag @s remove sniper_shot 

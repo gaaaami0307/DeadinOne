@@ -260,10 +260,44 @@ class Handgun{
     }
 }
 
+//スナイパーライフル
+class SniperRifle{
+    cooldown = 40;
+    SID = "sniper_rifle";
+    ID="dio:"+this.SID;
+
+    constructor(brand){
+        this.brand=brand;
+    }
+
+    skill(ev){
+        const pl = ev.source;
+
+        pl.runCommandAsync("scoreboard players test @s weaponcooldown 1 *")
+        .then(result =>{
+          if(result.successCount == 0){
+            pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run tag @s add sniper_shot");
+            
+            pl.runCommandAsync("scoreboard players test @s e_overdrive 1 *")
+            .then(result =>{
+              if(result.successCount >= 1){
+                pl.startItemCooldown(this.SID,this.cooldown/2);
+                pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run scoreboard players set @s weaponcooldown " + this.cooldown/2);
+              }
+              else{
+                pl.startItemCooldown(this.SID,this.cooldown);
+                pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run scoreboard players set @s weaponcooldown " + this.cooldown);
+              }
+            })
+          }
+        })
+        .catch(() =>{})
+    }
+}
 
 //----------------------------------------------------Script
 
-const weapons=[new Power_Skill(), new Ultimate(), new AssaultRifle(), new Minigun(), new Handgun()
+const weapons=[new Power_Skill(), new Ultimate(), new AssaultRifle(), new Minigun(), new Handgun(), new SniperRifle()
 ];
 
 //ここにスクリプトを記述
@@ -302,6 +336,7 @@ server.system.runInterval(ev => {
     "assault_rifle",
     "minigun",
     "hand_gun",
+    "sniper_rifle",
    ]
 
    //dio functiond

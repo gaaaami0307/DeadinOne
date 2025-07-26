@@ -16,6 +16,9 @@
       "assault_rifle" : {
          "textures" : "textures/items/assault_rifle"
       },
+      "sniper_rifle" : {
+         "textures" : "textures/items/sniper_rifle"
+      },
       "minigun" : {
          "textures" : "textures/items/minigun"
       },
