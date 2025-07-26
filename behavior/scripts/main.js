@@ -360,7 +360,8 @@ server.system.runInterval(ev => {
     "gameending",
     "itemtp",
     "effects",
-    "shot"
+    "shot",
+    "parking"
    ]
 
    //jobs
