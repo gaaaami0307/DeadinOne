@@ -1,7 +1,6 @@
 #リロード中
 scoreboard players remove @a[scores={reload=1..}] reload 1
 scoreboard players add @a[scores={reload=1..}] reloadT 1
-scoreboard players set @a[scores={reload=60}] arrow 0
 execute as @a[scores={reloadT=20}] at @s run playsound random.click @a ~~~ 1 1
 execute as @a[scores={reloadT=10}] at @s run playsound random.click @a ~~~ 1 1
 execute as @a[scores={reload=2..}] at @s run scoreboard players remove @s[scores={park=3}] reload 1
@@ -18,3 +17,5 @@ execute as @a[scores={reload=1}] as @s[scores={park=10}] at @s run camera @a[r=1
 scoreboard players set @a[scores={reload=1}] arrow 5
 scoreboard players set @a[scores={reload=1}] reloadT 0
 execute as @a[scores={reload=1}] at @s run scoreboard players add @s[scores={park=6}] arrow 2
+execute as @a[scores={reload=1}] at @s run scoreboard players operation @s arrow += @s sub_reload_ammo
+scoreboard players set @a[scores={reload=1}] sub_reload_ammo 0

@@ -19,4 +19,5 @@ replaceitem entity @a[tag=battle,scores={arrow=17}] slot.hotbar 8 arrow 17 0 {"m
 replaceitem entity @a[tag=battle,scores={arrow=18}] slot.hotbar 8 arrow 18 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
 replaceitem entity @a[tag=battle,scores={arrow=19}] slot.hotbar 8 arrow 19 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
 replaceitem entity @a[tag=battle,scores={arrow=20..}] slot.hotbar 8 arrow 20 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}
+scoreboard players set @a[tag=battle,scores={arrow=20..}] arrow 20
 replaceitem entity @a[tag=battle,scores={arrow=..0}] slot.hotbar 8 barrier 1 0 {"minecraft:item_lock":{"mode":"lock_in_slot"}}

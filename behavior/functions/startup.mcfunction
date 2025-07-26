@@ -25,3 +25,7 @@ scoreboard objectives add e_marking dummy
 scoreboard objectives add e_marking2 dummy
 scoreboard objectives add UUID dummy
 scoreboard objectives add weaponcooldown dummy
+scoreboard objectives add sub_reload_ammo dummy
+scoreboard objectives add count_stop dummy
+scoreboard objectives add count_move dummy
+scoreboard objectives add park_cooldown dummy
