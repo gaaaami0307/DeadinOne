@@ -3,6 +3,7 @@ scoreboard players remove @a[scores={reload=1..}] reload 1
 scoreboard players add @a[scores={reload=1..}] reloadT 1
 execute as @a[scores={reloadT=20}] at @s run playsound random.click @a ~~~ 1 1
 execute as @a[scores={reloadT=10}] at @s run playsound random.click @a ~~~ 1 1
+execute as @a[scores={reload=3..}] at @s run scoreboard players remove @s[scores={e_overdrive=1..}] reload 1
 execute as @a[scores={reload=2..}] at @s run scoreboard players remove @s[scores={park=3}] reload 1
 execute as @a[scores={reload=20..}] as @s[scores={park=9}] at @s run effect @s speed 1 2
 execute as @a[scores={reload=20..}] as @s[scores={park=9}] at @s run effect @s weakness 1 2
