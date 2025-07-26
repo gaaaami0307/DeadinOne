@@ -172,8 +172,18 @@ class AssaultRifle{
         .then(result =>{
           if(result.successCount == 0){
             pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run tag @s add assault_shot");
-            pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run scoreboard players set @s weaponcooldown " + this.cooldown);
-            pl.startItemCooldown(this.SID,this.cooldown);
+            
+            pl.runCommandAsync("scoreboard players test @s e_overdrive 1 *")
+            .then(result =>{
+              if(result.successCount >= 1){
+                pl.startItemCooldown(this.SID,this.cooldown/2);
+                pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run scoreboard players set @s weaponcooldown " + this.cooldown/2);
+              }
+              else{
+                pl.startItemCooldown(this.SID,this.cooldown);
+                pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run scoreboard players set @s weaponcooldown " + this.cooldown);
+              }
+            })
           }
         })
         .catch(() =>{})
@@ -197,8 +207,18 @@ class Minigun{
         .then(result =>{
           if(result.successCount == 0){
             pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run tag @s add minigun_shot");
-            pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run scoreboard players set @s weaponcooldown " + this.cooldown);
-            pl.startItemCooldown(this.SID,this.cooldown);
+            
+            pl.runCommandAsync("scoreboard players test @s e_overdrive 1 *")
+            .then(result =>{
+              if(result.successCount >= 1){
+                pl.startItemCooldown(this.SID,this.cooldown/2);
+                pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run scoreboard players set @s weaponcooldown " + this.cooldown/2);
+              }
+              else{
+                pl.startItemCooldown(this.SID,this.cooldown);
+                pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run scoreboard players set @s weaponcooldown " + this.cooldown);
+              }
+            })
           }
         })
         .catch(() =>{})
@@ -222,8 +242,18 @@ class Handgun{
         .then(result =>{
           if(result.successCount == 0){
             pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run tag @s add handgun_shot");
-            pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run scoreboard players set @s weaponcooldown " + this.cooldown);
-            pl.startItemCooldown(this.SID,this.cooldown);
+            
+            pl.runCommandAsync("scoreboard players test @s e_overdrive 1 *")
+            .then(result =>{
+              if(result.successCount >= 1){
+                pl.startItemCooldown(this.SID,this.cooldown/2);
+                pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run scoreboard players set @s weaponcooldown " + this.cooldown/2);
+              }
+              else{
+                pl.startItemCooldown(this.SID,this.cooldown);
+                pl.runCommandAsync("execute as @s[scores={weaponcooldown=..0}] at @s run scoreboard players set @s weaponcooldown " + this.cooldown);
+              }
+            })
           }
         })
         .catch(() =>{})
