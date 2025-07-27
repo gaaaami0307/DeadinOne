@@ -1,2 +1,2 @@
-execute as @a[scores={job=1},tag=t:sneaking] as @s[scores={recast=0}] at @s run execute at @a[r=35,rm=0.1] run summon fireworks_rocket
-execute as @a[scores={job=1},tag=t:sneaking] as @s[scores={recast=0}] at @s run scoreboard players set @s recast 20
+execute as @a[scores={job=1}] if entity @e[scores={e_marking=20..}] at @s run effect @s speed 1 1 true
+execute as @a[scores={job=1}] if entity @e[scores={e_marking=20..}] at @s run effect @s jump_boost 1 1 true
