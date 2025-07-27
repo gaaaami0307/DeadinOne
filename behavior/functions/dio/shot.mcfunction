@@ -1,4 +1,13 @@
 scoreboard players remove @a[scores={weaponcooldown=1..}] weaponcooldown 1
+#感電処理
+execute as @a[tag=assault_shot,scores={e_sparking=1..}] as @s[scores={e_sparking2=5..13}] at @s positioned ^^^0.5 run particle rouge:thunder ~~1.5~
+execute as @a[tag=assault_shot,scores={e_sparking=1..}] as @s[scores={e_sparking2=5..13}] at @s run tag @s remove assault_shot
+execute as @a[tag=minigun_shot,scores={e_sparking=1..}] as @s[scores={e_sparking2=5..13}] at @s positioned ^^^0.5 run particle rouge:thunder ~~1.5~
+execute as @a[tag=minigun_shot,scores={e_sparking=1..}] as @s[scores={e_sparking2=5..13}] at @s run tag @s remove minigun_shot
+execute as @a[tag=handgun_shot,scores={e_sparking=1..}] as @s[scores={e_sparking2=5..13}] at @s positioned ^^^0.5 run particle rouge:thunder ~~1.5~
+execute as @a[tag=handgun_shot,scores={e_sparking=1..}] as @s[scores={e_sparking2=5..13}] at @s run tag @s remove handgun_shot
+execute as @a[tag=sniper_shot,scores={e_sparking=1..}] as @s[scores={e_sparking2=5..13}] at @s positioned ^^^0.5 run particle rouge:thunder ~~1.5~
+execute as @a[tag=sniper_shot,scores={e_sparking=1..}] as @s[scores={e_sparking2=5..13}] at @s run tag @s remove sniper_shot
 #アサルトライフル
 execute as @a[tag=assault_shot,scores={arrow=..0}] at @s run playsound random.click @a ~~~ 1 0.6
 execute as @a[tag=assault_shot,scores={arrow=..0}] at @s positioned ^^^0.5 run particle minecraft:dust_plume ~~1.5~

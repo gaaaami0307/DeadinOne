@@ -30,3 +30,5 @@ scoreboard objectives add count_stop dummy
 scoreboard objectives add count_move dummy
 scoreboard objectives add park_cooldown dummy
 scoreboard objectives add e_overdrive dummy
+scoreboard objectives add e_sparking dummy
+scoreboard objectives add e_sparking2 dummy
