@@ -1,11 +1,11 @@
 #park14 堅牢
 execute as @a[scores={park=14}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=100}] at @s run playsound note.bell @s ~~~ 1 1
-execute as @a[scores={park=14}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=100..}] at @s positioned ^^^0.3 run particle minecraft:basic_portal_particle ~~2~
+execute as @a[scores={park=14}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=100..}] at @s run particle minecraft:end_chest ~~0.8~
 execute as @a[scores={park=14}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=200}] at @s run playsound note.bell @s ~~~ 1 1.1
 execute as @a[scores={park=14}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=300}] at @s run playsound note.bell @s ~~~ 1 1.2
 execute as @a[scores={park=14}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=400}] at @s run playsound note.bell @s ~~~ 1 1.3
 execute as @a[scores={park=14}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=400..}] at @s run scoreboard players set @s e_marking 2
-execute as @a[scores={park=14}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=400..}] at @s run particle minecraft:end_chest ~~0.8~
+execute as @a[scores={park=14}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=400..}] at @s run particle minecraft:end_chest ~~1.3~
 execute as @a[scores={park=14}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=500}] at @s run playsound note.bell @s ~~~ 1 1.4
 execute as @a[scores={park=14}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=530}] at @s run playsound note.bell @s ~~~ 1 1.5
 execute as @a[scores={park=14}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=550}] at @s run playsound note.bell @s ~~~ 1 1.6
@@ -33,12 +33,12 @@ execute as @a[scores={park=14}] as @s[scores={park_cooldown=..0}] as @s[scores={
 execute as @a[scores={park=14}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=600}] at @s run scoreboard players set @s park_cooldown 2400
 #park15 銃撃
 execute as @a[scores={park=15}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=100}] at @s run playsound note.bit @s ~~~ 1 1
-execute as @a[scores={park=15}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=100..}] at @s positioned ^^^0.3 run particle minecraft:basic_portal_particle ~~2~
+execute as @a[scores={park=15}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=100..}] at @s run particle minecraft:end_chest ~~0.8~
 execute as @a[scores={park=15}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=200}] at @s run playsound note.bit @s ~~~ 1 1.1
 execute as @a[scores={park=15}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=300}] at @s run playsound note.bit @s ~~~ 1 1.2
 execute as @a[scores={park=15}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=400}] at @s run playsound note.bit @s ~~~ 1 1.3
 execute as @a[scores={park=15}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=400..}] at @s run scoreboard players set @s e_marking 2
-execute as @a[scores={park=15}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=400..}] at @s run particle minecraft:end_chest ~~0.8~
+execute as @a[scores={park=15}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=400..}] at @s run particle minecraft:end_chest ~~1.3~
 execute as @a[scores={park=15}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=500}] at @s run playsound note.bit @s ~~~ 1 1.4
 execute as @a[scores={park=15}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=530}] at @s run playsound note.bit @s ~~~ 1 1.5
 execute as @a[scores={park=15}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=550}] at @s run playsound note.bit @s ~~~ 1 1.6
@@ -66,12 +66,12 @@ execute as @a[scores={park=15}] as @s[scores={park_cooldown=..0}] as @s[scores={
 execute as @a[scores={park=15}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=600}] at @s run scoreboard players set @s park_cooldown 3600
 #park16 索敵
 execute as @a[scores={park=16}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=100}] at @s run playsound note.banjo @s ~~~ 1 1
-execute as @a[scores={park=16}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=100..}] at @s positioned ^^^0.3 run particle minecraft:basic_portal_particle ~~2~
+execute as @a[scores={park=16}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=100..}] at @s run particle minecraft:end_chest ~~0.8~
 execute as @a[scores={park=16}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=200}] at @s run playsound note.banjo @s ~~~ 1 1.1
 execute as @a[scores={park=16}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=300}] at @s run playsound note.banjo @s ~~~ 1 1.2
 execute as @a[scores={park=16}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=400}] at @s run playsound note.banjo @s ~~~ 1 1.3
 execute as @a[scores={park=16}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=400..}] at @s run scoreboard players set @s e_marking 2
-execute as @a[scores={park=16}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=400..}] at @s run particle minecraft:end_chest ~~0.8~
+execute as @a[scores={park=16}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=400..}] at @s run particle minecraft:end_chest ~~1.3~
 execute as @a[scores={park=16}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=500}] at @s run playsound note.banjo @s ~~~ 1 1.4
 execute as @a[scores={park=16}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=530}] at @s run playsound note.banjo @s ~~~ 1 1.5
 execute as @a[scores={park=16}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=550}] at @s run playsound note.banjo @s ~~~ 1 1.6
