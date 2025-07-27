@@ -19,5 +19,6 @@ scoreboard players set @a[scores={reload=1}] arrow 5
 scoreboard players set @a[scores={reload=1}] reloadT 0
 execute as @a[scores={reload=1}] at @s run scoreboard players add @s[scores={park=6}] arrow 2
 execute as @a[scores={reload=1}] at @s run effect @s[scores={park=13}] speed 2 4 true
+execute as @a[scores={reload=1..}] at @s run scoreboard players add @s[scores={park=18}] recastT 1
 execute as @a[scores={reload=1}] at @s run scoreboard players operation @s arrow += @s sub_reload_ammo
 scoreboard players set @a[scores={reload=1}] sub_reload_ammo 0
