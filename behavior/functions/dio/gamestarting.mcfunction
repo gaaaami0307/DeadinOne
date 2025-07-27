@@ -19,3 +19,4 @@ execute as @a[scores={countdown=4}] at @s run tag @s add spawn
 execute as @a[scores={countdown=1}] at @s run playsound mob.enderdragon.growl @s ~~~ 0.25 1 
 execute as @a[scores={countdown=1}] at @s run give @s[scores={park=11}] dio:minigun 1
 execute as @a[scores={countdown=1}] at @s run give @s[scores={park=12}] dio:sniper_rifle 1
+execute as @a[scores={countdown=1}] at @s run scoreboard players add @s[scores={park=17}] ap 50
