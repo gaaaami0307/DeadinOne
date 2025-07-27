@@ -1,0 +1,1 @@
+execute as @a[scores={job=15}] at @s positioned ^^^-25 positioned ~~10~ positioned ^^^25.5 run particle minecraft:redstone_ore_dust_particle ~~~

@@ -1,0 +1,1 @@
+execute as @a[scores={job=15},tag=death2] at @s run tag @s remove death2

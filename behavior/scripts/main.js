@@ -333,6 +333,7 @@ server.system.runInterval(ev => {
    const deadinoneEntities=[
     "job5_skill",
     "job10_skill",
+    "job15_skill",
     "assault_rifle",
     "minigun",
     "hand_gun",
@@ -365,7 +366,7 @@ server.system.runInterval(ev => {
    ]
 
    //jobs
-   const job_number=14; 
+   const job_number=15; 
 
    const op_player = server.world.getAllPlayers()[0];
    for (const entity of entities){
