@@ -262,7 +262,7 @@ class Handgun{
 
 //スナイパーライフル
 class SniperRifle{
-    cooldown = 40;
+    cooldown = 30;
     SID = "sniper_rifle";
     ID="dio:"+this.SID;
 
