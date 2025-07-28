@@ -6,7 +6,7 @@ scoreboard players add @s death_timer 1
 #ID=E_job15
 execute as @s[scores={death_timer=1}] at @s positioned ~~~ run tag @s add E_job15
 #発射元ターゲット
-execute as @s[scores={death_timer=1}] at @s positioned ~~~ run tag @e[c=1,family=!inanimate,type=!item,tag=!E_job15] add E_job15_settinger
+execute as @s[scores={death_timer=1}] at @s positioned ~~~ run tag @e[c=1,tag=!E_job15,tag=people] add E_job15_settinger
 #初期位置
 execute as @s[scores={death_timer=1}] at @s positioned ~~~ run execute as @e[tag=E_job15_settinger,c=1] at @s positioned ^^^-25 run tp @e[tag=E_job15,c=1] ~~10~ facing @s[c=1]
 #set ID

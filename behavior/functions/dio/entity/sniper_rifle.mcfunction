@@ -6,7 +6,7 @@ scoreboard players add @s death_timer 1
 #ID=E_snipe
 execute as @s[scores={death_timer=1}] at @s positioned ~~~ run tag @s add E_snipe
 #発射元ターゲット
-execute as @s[scores={death_timer=1}] at @s positioned ~~~ run tag @e[c=1,family=!inanimate,type=!item,tag=!E_snipe] add E_snipe_settinger
+execute as @s[scores={death_timer=1}] at @s positioned ~~~ run tag @e[c=1,tag=!E_snipe,tag=people] add E_snipe_settinger
 #初期位置
 execute as @s[scores={death_timer=1}] at @s positioned ~~~ run execute as @e[tag=E_snipe_settinger,c=1] at @s positioned ^^^-30 run tp @e[tag=E_snipe,c=1] ~~~ facing @e[tag=E_snipe_settinger,c=1]
 #set ID

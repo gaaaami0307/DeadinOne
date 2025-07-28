@@ -3,6 +3,7 @@ scoreboard players set @a[tag=!setup] arrow_damage 2
 tag @a[tag=!setup] add resist_fall
 tag @a[tag=!setup] add arrow_damage_2
 tag @a[tag=!setup] add noname
+tag @a[tag=!setup] add people
 tag @a[tag=!setup] remove no_attack
 tag @a[tag=!setup] add arrow_remove_on_hit_2
 scoreboard objectives remove killCount
@@ -33,6 +34,7 @@ scoreboard players set @a[tag=!setup] arg3 0
 tag @a[tag=!setup] remove kill
 tag @a[tag=!setup] remove kill2
 tag @a[tag=!setup] remove spawn2
+tag @a[tag=!setup] remove shot2
 tag @a[tag=!setup] remove death
 tag @a[tag=!setup] remove death2
 tag @a[tag=!setup] remove skill
