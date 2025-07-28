@@ -1,0 +1,39 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "dio:target_hp5",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "animations": {
+                
+            },
+            "scripts": {
+                
+            }
+        },
+        "components": {       
+            "minecraft:collision_box": {
+                "width": 1,
+                "height": 1
+            },
+            "minecraft:health": {
+                "value": 5,
+                "max": 5
+            },
+            "minecraft:knockback_resistance": {
+                "value": 0.9
+            },
+            "minecraft:physics": {
+                "has_gravity": true
+            },
+            "minecraft:pushable": {
+            "is_pushable": false,
+            "is_pushable_by_piston": false
+            },
+            "minecraft:nameable": {}
+        },
+        "component_groups": {
+        }
+    }
+}

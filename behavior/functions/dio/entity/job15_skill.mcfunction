@@ -40,7 +40,7 @@ execute as @s[scores={death_timer=1}] at @s positioned ~~~ run tp @s[scores={arg
 #高さ調整
 execute as @s[scores={death_timer=1}] at @s positioned ~~~ run tp @s ~~110.5~
 #発射時効果音 audio/pitch
-execute as @s[scores={death_timer=1}] at @s positioned ~~-100~ run playsound firework.blast @a ~~~ 1.5 1.4
+execute as @s[scores={death_timer=1}] at @s positioned ~~-110~ run playsound firework.large_blast @a ~~~ 1.5 1.4
 #発射時パーティクル
 execute as @s[scores={death_timer=1}] at @s positioned ~~-100~ run particle minecraft:large_explosion ~~~
 #
