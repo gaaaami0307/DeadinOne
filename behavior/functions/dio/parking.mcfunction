@@ -97,3 +97,7 @@ execute as @a[scores={park=16}] as @s[scores={park_cooldown=..0}] as @s[scores={
 execute as @a[scores={park=16}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=600}] at @s run tellraw @s { "rawtext": [{"text":"§6パーク発動！！！"}] }
 execute as @a[scores={park=16}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=600}] at @s run particle minecraft:breeze_wind_explosion_emitter ~~1~
 execute as @a[scores={park=16}] as @s[scores={park_cooldown=..0}] as @s[scores={count_stop=600}] at @s run scoreboard players set @s park_cooldown 3000
+#パーク19
+execute as @a[scores={park=19}] unless entity @a[scores={killCount=5..}] at @s run scoreboard players add @s[scores={recast=1..}] recastT 1
+#パーク20
+execute as @a[scores={park=20}] if entity @a[scores={killCount=25..}] at @s run scoreboard players add @s[scores={recast=1..}] recastT 1
